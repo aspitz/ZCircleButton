@@ -21,6 +21,10 @@
 		79B357131918014A00681E05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F51918014A00681E05 /* UIKit.framework */; };
 		79B3571B1918014A00681E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B357191918014A00681E05 /* InfoPlist.strings */; };
 		79B3571D1918014A00681E05 /* ZCircleButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3571C1918014A00681E05 /* ZCircleButtonTests.m */; };
+		79B3572F191801BE00681E05 /* ZCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B35728191801BE00681E05 /* ZCircleButton.m */; };
+		79B35730191801BE00681E05 /* ZCircleButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */; };
+		79B35731191801BE00681E05 /* ZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572C191801BE00681E05 /* ZCircleView.m */; };
+		79B35732191801BE00681E05 /* ZSelectableCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		79B357181918014A00681E05 /* ZCircleButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZCircleButtonTests-Info.plist"; sourceTree = "<group>"; };
 		79B3571A1918014A00681E05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79B3571C1918014A00681E05 /* ZCircleButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCircleButtonTests.m; sourceTree = "<group>"; };
+		79B35727191801BE00681E05 /* ZCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleButton.h; sourceTree = "<group>"; };
+		79B35728191801BE00681E05 /* ZCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleButton.m; sourceTree = "<group>"; };
+		79B35729191801BE00681E05 /* ZCircleButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleButtonMenu.h; sourceTree = "<group>"; };
+		79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleButtonMenu.m; sourceTree = "<group>"; };
+		79B3572B191801BE00681E05 /* ZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleView.h; sourceTree = "<group>"; };
+		79B3572C191801BE00681E05 /* ZCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleView.m; sourceTree = "<group>"; };
+		79B3572D191801BE00681E05 /* ZSelectableCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSelectableCircleButton.h; sourceTree = "<group>"; };
+		79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSelectableCircleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,7 @@
 				79B357061918014A00681E05 /* ZViewController.h */,
 				79B357071918014A00681E05 /* ZViewController.m */,
 				79B357091918014A00681E05 /* Images.xcassets */,
+				79B35726191801BE00681E05 /* ZCircleButton */,
 				79B356F81918014A00681E05 /* Supporting Files */,
 			);
 			path = ZCircleButton;
@@ -150,6 +163,21 @@
 				79B357191918014A00681E05 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79B35726191801BE00681E05 /* ZCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				79B35727191801BE00681E05 /* ZCircleButton.h */,
+				79B35728191801BE00681E05 /* ZCircleButton.m */,
+				79B3572B191801BE00681E05 /* ZCircleView.h */,
+				79B3572C191801BE00681E05 /* ZCircleView.m */,
+				79B35729191801BE00681E05 /* ZCircleButtonMenu.h */,
+				79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */,
+				79B3572D191801BE00681E05 /* ZSelectableCircleButton.h */,
+				79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */,
+			);
+			path = ZCircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +280,10 @@
 			files = (
 				79B356FE1918014A00681E05 /* main.m in Sources */,
 				79B357081918014A00681E05 /* ZViewController.m in Sources */,
+				79B35732191801BE00681E05 /* ZSelectableCircleButton.m in Sources */,
+				79B35730191801BE00681E05 /* ZCircleButtonMenu.m in Sources */,
+				79B35731191801BE00681E05 /* ZCircleView.m in Sources */,
+				79B3572F191801BE00681E05 /* ZCircleButton.m in Sources */,
 				79B357021918014A00681E05 /* ZAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
