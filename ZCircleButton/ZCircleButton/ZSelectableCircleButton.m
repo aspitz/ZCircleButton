@@ -1,6 +1,5 @@
 //
 //  ZSelectableCircleButton.m
-//  ParkingMeter
 //
 //  Created by Ayal Spitz on 3/24/14.
 //  Copyright (c) 2014 Localytics. All rights reserved.

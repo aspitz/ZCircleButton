@@ -1,6 +1,5 @@
 //
 //  UIImage+TintUtilities.h
-//  ParkingMeter
 //
 //  Created by Ayal Spitz on 3/28/14.
 //  Copyright (c) 2014 Localytics. All rights reserved.

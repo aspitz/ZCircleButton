@@ -1,6 +1,5 @@
 //
 //  ZCircleView.m
-//  ParkingMeter
 //
 //  Created by Ayal Spitz on 4/2/14.
 //  Copyright (c) 2014 Localytics. All rights reserved.
