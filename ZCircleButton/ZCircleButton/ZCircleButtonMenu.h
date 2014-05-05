@@ -7,11 +7,11 @@
 
 #import "ZSelectableCircleButton.h"
 
-typedef BOOL (^BooleanActionBlock)(id sender);
+typedef BOOL (^ZCircleButtonBooleanActionBlock)(id sender);
 
 @interface ZCircleButtonMenu : ZSelectableCircleButton
 
-@property (nonatomic, copy) BooleanActionBlock shouldShowMenu;
+@property (nonatomic, copy) BOOL (^shouldShowMenu)(id sender);
 
 + (instancetype)buttonMenuWithLabel:(NSString *)label andImageNamed:(NSString *)imageName;
 

@@ -60,7 +60,7 @@
             [self.backgroundView addSubview:button];
             [self.backgroundView sendSubviewToBack:button];
             
-            ActionBlock originalTapAction = button.onTap;
+            void (^originalTapAction)(id sender) = button.onTap;
             button.onTap = ^(id sender){
                 [self hideMenuAndAct:originalTapAction];
             };
@@ -79,7 +79,7 @@
         buttonCopy.onLongPress = nil;
         
         [self.backgroundView addSubview:buttonCopy];
-        ActionBlock originalTapAction = buttonCopy.onTap;
+        void (^originalTapAction)(id sender) = buttonCopy.onTap;
         buttonCopy.onTap = ^(id sender){
             [self hideMenuAndAct:originalTapAction];
         };
@@ -90,7 +90,7 @@
     [self hideMenuAndAct:nil];
 }
 
-- (void)hideMenuAndAct:(ActionBlock)actionBlock{
+- (void)hideMenuAndAct:(void (^)(id sender))actionBlock{
     [UIView animateWithDuration:0.5 animations:^{
         [self.menuItems enumerateObjectsUsingBlock:^(ZCircleButton *button, NSUInteger idx, BOOL *stop) {
             button.center = CGPointMake(button.center.x, button.center.y + (80 * (idx + 1)));

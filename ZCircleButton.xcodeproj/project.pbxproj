@@ -1,510 +1,1273 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		79B356F21918014A00681E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F11918014A00681E05 /* Foundation.framework */; };
-		79B356F41918014A00681E05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F31918014A00681E05 /* CoreGraphics.framework */; };
-		79B356F61918014A00681E05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F51918014A00681E05 /* UIKit.framework */; };
-		79B356FC1918014A00681E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B356FA1918014A00681E05 /* InfoPlist.strings */; };
-		79B356FE1918014A00681E05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B356FD1918014A00681E05 /* main.m */; };
-		79B357021918014A00681E05 /* ZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B357011918014A00681E05 /* ZAppDelegate.m */; };
-		79B357051918014A00681E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B357031918014A00681E05 /* Main.storyboard */; };
-		79B357081918014A00681E05 /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B357071918014A00681E05 /* ZViewController.m */; };
-		79B3570A1918014A00681E05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B357091918014A00681E05 /* Images.xcassets */; };
-		79B357111918014A00681E05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B357101918014A00681E05 /* XCTest.framework */; };
-		79B357121918014A00681E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F11918014A00681E05 /* Foundation.framework */; };
-		79B357131918014A00681E05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B356F51918014A00681E05 /* UIKit.framework */; };
-		79B3571B1918014A00681E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B357191918014A00681E05 /* InfoPlist.strings */; };
-		79B3571D1918014A00681E05 /* ZCircleButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3571C1918014A00681E05 /* ZCircleButtonTests.m */; };
-		79B3572F191801BE00681E05 /* ZCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B35728191801BE00681E05 /* ZCircleButton.m */; };
-		79B35730191801BE00681E05 /* ZCircleButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */; };
-		79B35731191801BE00681E05 /* ZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572C191801BE00681E05 /* ZCircleView.m */; };
-		79B35732191801BE00681E05 /* ZSelectableCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */; };
-		79B357351918080F00681E05 /* UIImage+TintUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B357341918080F00681E05 /* UIImage+TintUtilities.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		79B357141918014A00681E05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79B356E61918014A00681E05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79B356ED1918014A00681E05;
-			remoteInfo = ZCircleButton;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		79B356EE1918014A00681E05 /* ZCircleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCircleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B356F11918014A00681E05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		79B356F31918014A00681E05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		79B356F51918014A00681E05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		79B356F91918014A00681E05 /* ZCircleButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZCircleButton-Info.plist"; sourceTree = "<group>"; };
-		79B356FB1918014A00681E05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79B356FD1918014A00681E05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79B356FF1918014A00681E05 /* ZCircleButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZCircleButton-Prefix.pch"; sourceTree = "<group>"; };
-		79B357001918014A00681E05 /* ZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAppDelegate.h; sourceTree = "<group>"; };
-		79B357011918014A00681E05 /* ZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAppDelegate.m; sourceTree = "<group>"; };
-		79B357041918014A00681E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79B357061918014A00681E05 /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
-		79B357071918014A00681E05 /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
-		79B357091918014A00681E05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		79B3570F1918014A00681E05 /* ZCircleButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCircleButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B357101918014A00681E05 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		79B357181918014A00681E05 /* ZCircleButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZCircleButtonTests-Info.plist"; sourceTree = "<group>"; };
-		79B3571A1918014A00681E05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79B3571C1918014A00681E05 /* ZCircleButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCircleButtonTests.m; sourceTree = "<group>"; };
-		79B35727191801BE00681E05 /* ZCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleButton.h; sourceTree = "<group>"; };
-		79B35728191801BE00681E05 /* ZCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleButton.m; sourceTree = "<group>"; };
-		79B35729191801BE00681E05 /* ZCircleButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleButtonMenu.h; sourceTree = "<group>"; };
-		79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleButtonMenu.m; sourceTree = "<group>"; };
-		79B3572B191801BE00681E05 /* ZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCircleView.h; sourceTree = "<group>"; };
-		79B3572C191801BE00681E05 /* ZCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCircleView.m; sourceTree = "<group>"; };
-		79B3572D191801BE00681E05 /* ZSelectableCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSelectableCircleButton.h; sourceTree = "<group>"; };
-		79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSelectableCircleButton.m; sourceTree = "<group>"; };
-		79B357331918080F00681E05 /* UIImage+TintUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintUtilities.h"; sourceTree = "<group>"; };
-		79B357341918080F00681E05 /* UIImage+TintUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintUtilities.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		79B356EB1918014A00681E05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B356F41918014A00681E05 /* CoreGraphics.framework in Frameworks */,
-				79B356F61918014A00681E05 /* UIKit.framework in Frameworks */,
-				79B356F21918014A00681E05 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79B3570C1918014A00681E05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B357111918014A00681E05 /* XCTest.framework in Frameworks */,
-				79B357131918014A00681E05 /* UIKit.framework in Frameworks */,
-				79B357121918014A00681E05 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		79B356E51918014A00681E05 = {
-			isa = PBXGroup;
-			children = (
-				79B356F71918014A00681E05 /* ZCircleButton */,
-				79B357161918014A00681E05 /* ZCircleButtonTests */,
-				79B356F01918014A00681E05 /* Frameworks */,
-				79B356EF1918014A00681E05 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		79B356EF1918014A00681E05 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				79B356EE1918014A00681E05 /* ZCircleButton.app */,
-				79B3570F1918014A00681E05 /* ZCircleButtonTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		79B356F01918014A00681E05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				79B356F11918014A00681E05 /* Foundation.framework */,
-				79B356F31918014A00681E05 /* CoreGraphics.framework */,
-				79B356F51918014A00681E05 /* UIKit.framework */,
-				79B357101918014A00681E05 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		79B356F71918014A00681E05 /* ZCircleButton */ = {
-			isa = PBXGroup;
-			children = (
-				79B357001918014A00681E05 /* ZAppDelegate.h */,
-				79B357011918014A00681E05 /* ZAppDelegate.m */,
-				79B357031918014A00681E05 /* Main.storyboard */,
-				79B357061918014A00681E05 /* ZViewController.h */,
-				79B357071918014A00681E05 /* ZViewController.m */,
-				79B357091918014A00681E05 /* Images.xcassets */,
-				79B35726191801BE00681E05 /* ZCircleButton */,
-				79B356F81918014A00681E05 /* Supporting Files */,
-			);
-			path = ZCircleButton;
-			sourceTree = "<group>";
-		};
-		79B356F81918014A00681E05 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				79B356F91918014A00681E05 /* ZCircleButton-Info.plist */,
-				79B356FA1918014A00681E05 /* InfoPlist.strings */,
-				79B356FD1918014A00681E05 /* main.m */,
-				79B356FF1918014A00681E05 /* ZCircleButton-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		79B357161918014A00681E05 /* ZCircleButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				79B3571C1918014A00681E05 /* ZCircleButtonTests.m */,
-				79B357171918014A00681E05 /* Supporting Files */,
-			);
-			path = ZCircleButtonTests;
-			sourceTree = "<group>";
-		};
-		79B357171918014A00681E05 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				79B357181918014A00681E05 /* ZCircleButtonTests-Info.plist */,
-				79B357191918014A00681E05 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		79B35726191801BE00681E05 /* ZCircleButton */ = {
-			isa = PBXGroup;
-			children = (
-				79B35727191801BE00681E05 /* ZCircleButton.h */,
-				79B35728191801BE00681E05 /* ZCircleButton.m */,
-				79B3572B191801BE00681E05 /* ZCircleView.h */,
-				79B3572C191801BE00681E05 /* ZCircleView.m */,
-				79B35729191801BE00681E05 /* ZCircleButtonMenu.h */,
-				79B3572A191801BE00681E05 /* ZCircleButtonMenu.m */,
-				79B3572D191801BE00681E05 /* ZSelectableCircleButton.h */,
-				79B3572E191801BE00681E05 /* ZSelectableCircleButton.m */,
-				79B357331918080F00681E05 /* UIImage+TintUtilities.h */,
-				79B357341918080F00681E05 /* UIImage+TintUtilities.m */,
-			);
-			path = ZCircleButton;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		79B356ED1918014A00681E05 /* ZCircleButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79B357201918014A00681E05 /* Build configuration list for PBXNativeTarget "ZCircleButton" */;
-			buildPhases = (
-				79B356EA1918014A00681E05 /* Sources */,
-				79B356EB1918014A00681E05 /* Frameworks */,
-				79B356EC1918014A00681E05 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ZCircleButton;
-			productName = ZCircleButton;
-			productReference = 79B356EE1918014A00681E05 /* ZCircleButton.app */;
-			productType = "com.apple.product-type.application";
-		};
-		79B3570E1918014A00681E05 /* ZCircleButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79B357231918014A00681E05 /* Build configuration list for PBXNativeTarget "ZCircleButtonTests" */;
-			buildPhases = (
-				79B3570B1918014A00681E05 /* Sources */,
-				79B3570C1918014A00681E05 /* Frameworks */,
-				79B3570D1918014A00681E05 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79B357151918014A00681E05 /* PBXTargetDependency */,
-			);
-			name = ZCircleButtonTests;
-			productName = ZCircleButtonTests;
-			productReference = 79B3570F1918014A00681E05 /* ZCircleButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		79B356E61918014A00681E05 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = Z;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = Localytics;
-				TargetAttributes = {
-					79B3570E1918014A00681E05 = {
-						TestTargetID = 79B356ED1918014A00681E05;
-					};
-				};
-			};
-			buildConfigurationList = 79B356E91918014A00681E05 /* Build configuration list for PBXProject "ZCircleButton" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 79B356E51918014A00681E05;
-			productRefGroup = 79B356EF1918014A00681E05 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				79B356ED1918014A00681E05 /* ZCircleButton */,
-				79B3570E1918014A00681E05 /* ZCircleButtonTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		79B356EC1918014A00681E05 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B3570A1918014A00681E05 /* Images.xcassets in Resources */,
-				79B356FC1918014A00681E05 /* InfoPlist.strings in Resources */,
-				79B357051918014A00681E05 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79B3570D1918014A00681E05 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B3571B1918014A00681E05 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		79B356EA1918014A00681E05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B356FE1918014A00681E05 /* main.m in Sources */,
-				79B357351918080F00681E05 /* UIImage+TintUtilities.m in Sources */,
-				79B357081918014A00681E05 /* ZViewController.m in Sources */,
-				79B35732191801BE00681E05 /* ZSelectableCircleButton.m in Sources */,
-				79B35730191801BE00681E05 /* ZCircleButtonMenu.m in Sources */,
-				79B35731191801BE00681E05 /* ZCircleView.m in Sources */,
-				79B3572F191801BE00681E05 /* ZCircleButton.m in Sources */,
-				79B357021918014A00681E05 /* ZAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79B3570B1918014A00681E05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79B3571D1918014A00681E05 /* ZCircleButtonTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		79B357151918014A00681E05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79B356ED1918014A00681E05 /* ZCircleButton */;
-			targetProxy = 79B357141918014A00681E05 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		79B356FA1918014A00681E05 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79B356FB1918014A00681E05 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		79B357031918014A00681E05 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79B357041918014A00681E05 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		79B357191918014A00681E05 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79B3571A1918014A00681E05 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		79B3571E1918014A00681E05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		79B3571F1918014A00681E05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		79B357211918014A00681E05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZCircleButton/ZCircleButton-Prefix.pch";
-				INFOPLIST_FILE = "ZCircleButton/ZCircleButton-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		79B357221918014A00681E05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZCircleButton/ZCircleButton-Prefix.pch";
-				INFOPLIST_FILE = "ZCircleButton/ZCircleButton-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		79B357241918014A00681E05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZCircleButton.app/ZCircleButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZCircleButton/ZCircleButton-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ZCircleButtonTests/ZCircleButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		79B357251918014A00681E05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZCircleButton.app/ZCircleButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZCircleButton/ZCircleButton-Prefix.pch";
-				INFOPLIST_FILE = "ZCircleButtonTests/ZCircleButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		79B356E91918014A00681E05 /* Build configuration list for PBXProject "ZCircleButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79B3571E1918014A00681E05 /* Debug */,
-				79B3571F1918014A00681E05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79B357201918014A00681E05 /* Build configuration list for PBXNativeTarget "ZCircleButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79B357211918014A00681E05 /* Debug */,
-				79B357221918014A00681E05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		79B357231918014A00681E05 /* Build configuration list for PBXNativeTarget "ZCircleButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79B357241918014A00681E05 /* Debug */,
-				79B357251918014A00681E05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 79B356E61918014A00681E05 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>03E9FF766B1144E4A1673F28</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82D31BE583E34794846DB378</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32827FDD4A144361BE16C594</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>690A9C69D8324FBC8CE420EA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>79B356E51918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B356F71918014A00681E05</string>
+				<string>79B357161918014A00681E05</string>
+				<string>79B356F01918014A00681E05</string>
+				<string>79B356EF1918014A00681E05</string>
+				<string>32827FDD4A144361BE16C594</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356E61918014A00681E05</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>Z</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Localytics</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>79B3570E1918014A00681E05</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>79B356ED1918014A00681E05</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>79B356E91918014A00681E05</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>79B356E51918014A00681E05</string>
+			<key>productRefGroup</key>
+			<string>79B356EF1918014A00681E05</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>79B356ED1918014A00681E05</string>
+				<string>79B3570E1918014A00681E05</string>
+			</array>
+		</dict>
+		<key>79B356E91918014A00681E05</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>79B3571E1918014A00681E05</string>
+				<string>79B3571F1918014A00681E05</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>79B356EA1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B356FE1918014A00681E05</string>
+				<string>79B357351918080F00681E05</string>
+				<string>79B357081918014A00681E05</string>
+				<string>79B35732191801BE00681E05</string>
+				<string>79B35730191801BE00681E05</string>
+				<string>79B35731191801BE00681E05</string>
+				<string>79B3572F191801BE00681E05</string>
+				<string>79B357021918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B356EB1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B356F41918014A00681E05</string>
+				<string>79B356F61918014A00681E05</string>
+				<string>79B356F21918014A00681E05</string>
+				<string>03E9FF766B1144E4A1673F28</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B356EC1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B3570A1918014A00681E05</string>
+				<string>79B356FC1918014A00681E05</string>
+				<string>79B357051918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B356ED1918014A00681E05</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>79B357201918014A00681E05</string>
+			<key>buildPhases</key>
+			<array>
+				<string>690A9C69D8324FBC8CE420EA</string>
+				<string>79B356EA1918014A00681E05</string>
+				<string>79B356EB1918014A00681E05</string>
+				<string>79B356EC1918014A00681E05</string>
+				<string>C91A15D39C604E3F80A90787</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ZCircleButton</string>
+			<key>productName</key>
+			<string>ZCircleButton</string>
+			<key>productReference</key>
+			<string>79B356EE1918014A00681E05</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>79B356EE1918014A00681E05</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ZCircleButton.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>79B356EF1918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B356EE1918014A00681E05</string>
+				<string>79B3570F1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356F01918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B356F11918014A00681E05</string>
+				<string>79B356F31918014A00681E05</string>
+				<string>79B356F51918014A00681E05</string>
+				<string>79B357101918014A00681E05</string>
+				<string>82D31BE583E34794846DB378</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356F11918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>79B356F21918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356F11918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B356F31918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>79B356F41918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356F31918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B356F51918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>79B356F61918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356F51918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B356F71918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B357001918014A00681E05</string>
+				<string>79B357011918014A00681E05</string>
+				<string>79B357031918014A00681E05</string>
+				<string>79B357061918014A00681E05</string>
+				<string>79B357071918014A00681E05</string>
+				<string>79B357091918014A00681E05</string>
+				<string>79B35726191801BE00681E05</string>
+				<string>79B356F81918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ZCircleButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356F81918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B356F91918014A00681E05</string>
+				<string>79B356FA1918014A00681E05</string>
+				<string>79B356FD1918014A00681E05</string>
+				<string>79B356FF1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356F91918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ZCircleButton-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356FA1918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B356FB1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356FB1918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356FC1918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356FA1918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B356FD1918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B356FE1918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356FD1918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B356FF1918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZCircleButton-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357001918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357011918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357021918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357011918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357031918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B357041918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357041918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357051918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357031918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357061918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357071918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357081918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357071918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357091918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3570A1918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357091918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B3570B1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B3571D1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B3570C1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B357111918014A00681E05</string>
+				<string>79B357131918014A00681E05</string>
+				<string>79B357121918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B3570D1918014A00681E05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79B3571B1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79B3570E1918014A00681E05</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>79B357231918014A00681E05</string>
+			<key>buildPhases</key>
+			<array>
+				<string>79B3570B1918014A00681E05</string>
+				<string>79B3570C1918014A00681E05</string>
+				<string>79B3570D1918014A00681E05</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>79B357151918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ZCircleButtonTests</string>
+			<key>productName</key>
+			<string>ZCircleButtonTests</string>
+			<key>productReference</key>
+			<string>79B3570F1918014A00681E05</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>79B3570F1918014A00681E05</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ZCircleButtonTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>79B357101918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>79B357111918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357101918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357121918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356F11918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357131918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B356F51918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357141918014A00681E05</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>79B356E61918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>79B356ED1918014A00681E05</string>
+			<key>remoteInfo</key>
+			<string>ZCircleButton</string>
+		</dict>
+		<key>79B357151918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>79B356ED1918014A00681E05</string>
+			<key>targetProxy</key>
+			<string>79B357141918014A00681E05</string>
+		</dict>
+		<key>79B357161918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B3571C1918014A00681E05</string>
+				<string>79B357171918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ZCircleButtonTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357171918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B357181918014A00681E05</string>
+				<string>79B357191918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357181918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ZCircleButtonTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357191918014A00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B3571A1918014A00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3571A1918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3571B1918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357191918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B3571C1918014A00681E05</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZCircleButtonTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3571D1918014A00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B3571C1918014A00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B3571E1918014A00681E05</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>79B3571F1918014A00681E05</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>79B357201918014A00681E05</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>79B357211918014A00681E05</string>
+				<string>79B357221918014A00681E05</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>79B357211918014A00681E05</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>32827FDD4A144361BE16C594</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ZCircleButton/ZCircleButton-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ZCircleButton/ZCircleButton-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>79B357221918014A00681E05</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>32827FDD4A144361BE16C594</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ZCircleButton/ZCircleButton-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ZCircleButton/ZCircleButton-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>79B357231918014A00681E05</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>79B357241918014A00681E05</string>
+				<string>79B357251918014A00681E05</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>79B357241918014A00681E05</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ZCircleButton.app/ZCircleButton</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ZCircleButton/ZCircleButton-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>ZCircleButtonTests/ZCircleButtonTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>79B357251918014A00681E05</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ZCircleButton.app/ZCircleButton</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ZCircleButton/ZCircleButton-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ZCircleButtonTests/ZCircleButtonTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>79B35726191801BE00681E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79B35727191801BE00681E05</string>
+				<string>79B35728191801BE00681E05</string>
+				<string>79B3572B191801BE00681E05</string>
+				<string>79B3572C191801BE00681E05</string>
+				<string>79B35729191801BE00681E05</string>
+				<string>79B3572A191801BE00681E05</string>
+				<string>79B3572D191801BE00681E05</string>
+				<string>79B3572E191801BE00681E05</string>
+				<string>79B357331918080F00681E05</string>
+				<string>79B357341918080F00681E05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ZCircleButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B35727191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZCircleButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B35728191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZCircleButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B35729191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZCircleButtonMenu.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572A191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZCircleButtonMenu.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572B191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZCircleView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572C191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZCircleView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572D191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZSelectableCircleButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572E191801BE00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZSelectableCircleButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B3572F191801BE00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B35728191801BE00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B35730191801BE00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B3572A191801BE00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B35731191801BE00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B3572C191801BE00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B35732191801BE00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B3572E191801BE00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B357331918080F00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+TintUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357341918080F00681E05</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+TintUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79B357351918080F00681E05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B357341918080F00681E05</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82D31BE583E34794846DB378</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C91A15D39C604E3F80A90787</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>79B356E61918014A00681E05</string>
+</dict>
+</plist>

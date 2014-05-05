@@ -7,8 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ZCircleButtonActionBlock)(id sender);
-
 @interface ZCircleButton : UIView
 
 @property (nonatomic, strong) UIColor *buttonTintColor;
@@ -17,8 +15,8 @@ typedef void (^ZCircleButtonActionBlock)(id sender);
 @property (nonatomic, readonly) UIImageView *imageView;
 @property (nonatomic, readonly) UILabel *label;
 
-@property (nonatomic, copy) ZCircleButtonActionBlock onTap;
-@property (nonatomic, copy) ZCircleButtonActionBlock onLongPress;
+@property (nonatomic, copy) void(^onTap)(id sender);
+@property (nonatomic, copy) void(^onLongPress)(id sender);
 
 - (instancetype)initWithLabel:(NSString *)label andImageNamed:(NSString *)imageName;
 + (instancetype)buttonWithLabel:(NSString *)label andImageNamed:(NSString *)imageName;
