@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZCircleButton/*.{m,h}"
+  s.source_files  = "ZCircleButton/ZCircleButton/*.{m,h}"
 
   # s.public_header_files = "Classes/**/*.h"
 
