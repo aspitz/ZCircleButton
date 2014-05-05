@@ -7,7 +7,6 @@
 //
 
 #import "ZCircleButton.h"
-#import "AppConstants.h"
 
 @interface ZSelectableCircleButton : ZCircleButton
 

@@ -7,8 +7,7 @@
 //
 
 #import "ZSelectableCircleButton.h"
-#import "UIImage+Utilities.h"
-#import "UIColor+Utilities.h"
+#import "UIImage+TintUtilities.h"
 
 @implementation ZSelectableCircleButton
 
@@ -62,7 +61,7 @@
 }
 
 - (void)setSelectedImageName:(NSString *)imageName{
-    self.selectedImageView.image = [UIImage imageNamed:imageName withTintColor:[UIColor tintBlueColor]];
+    self.selectedImageView.image = [UIImage imageNamed:imageName withTintColor:[UIColor whiteColor]];
 }
 
 - (IBAction)tapped:(UITapGestureRecognizer *)gestureRecognizer{

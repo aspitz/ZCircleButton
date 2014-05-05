@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppConstants.h"
+
+typedef void (^ZCircleButtonActionBlock)(id sender);
 
 @interface ZCircleButton : UIView
 
@@ -17,8 +18,8 @@
 @property (nonatomic, readonly) UIImageView *imageView;
 @property (nonatomic, readonly) UILabel *label;
 
-@property (nonatomic, copy) ActionBlock onTap;
-@property (nonatomic, copy) ActionBlock onLongPress;
+@property (nonatomic, copy) ZCircleButtonActionBlock onTap;
+@property (nonatomic, copy) ZCircleButtonActionBlock onLongPress;
 
 - (instancetype)initWithLabel:(NSString *)label andImageNamed:(NSString *)imageName;
 + (instancetype)buttonWithLabel:(NSString *)label andImageNamed:(NSString *)imageName;

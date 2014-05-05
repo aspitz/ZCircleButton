@@ -8,9 +8,7 @@
 
 #import "ZCircleButton.h"
 #import "ZCircleView.h"
-#import <libextobjc/extobjc.h>
-#import "UIImage+Utilities.h"
-#import "UIColor+Utilities.h"
+#import "UIImage+TintUtilities.h"
 
 #import <libextobjc/extobjc.h>
 
@@ -64,7 +62,7 @@
 #pragma mark - Setup methods
 
 - (void)setup{
-    self.buttonTintColor = [UIColor tintBlueColor];
+    self.buttonTintColor = [UIColor whiteColor];
     
     self.circleView = [[ZCircleView alloc]init];
     self.circleView.color = self.buttonTintColor;
