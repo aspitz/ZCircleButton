@@ -61,11 +61,12 @@
 #pragma mark - Setup methods
 
 - (void)setup{
-    self.buttonTintColor = [UIColor whiteColor];
+    self.buttonTintColor = [UIColor darkGrayColor];
+    self.buttonBackgroundColor = [UIColor whiteColor];
     
     self.circleView = [[ZCircleView alloc]init];
     self.circleView.color = self.buttonTintColor;
-    self.circleView.buttonBackgroundColor = [UIColor whiteColor];
+    self.circleView.buttonBackgroundColor = self.buttonBackgroundColor;
     [self addSubview:self.circleView];
 
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
@@ -101,17 +102,21 @@
     self.imageView.frame = CGRectMake(0.0, 0.0, 60.0, 60.0);
 }
 
-#pragma mark - Tint color methods
+#pragma mark - Button tint color methods
 
 - (void)setButtonTintColor:(UIColor *)buttonTintColor{
     _buttonTintColor = buttonTintColor;
-    
     self.label.textColor = buttonTintColor;
     if (self.imageView.image){
         self.imageView.image = [self.imageView.image tintWithColor:buttonTintColor];
     }
     self.circleView.color = buttonTintColor;
+    [self setNeedsDisplay];
+}
 
+- (void)setButtonBackgroundColor:(UIColor *)buttonBackgroundColor{
+    _buttonBackgroundColor = buttonBackgroundColor;
+    self.circleView.buttonBackgroundColor = self.buttonBackgroundColor;
     [self setNeedsDisplay];
 }
 

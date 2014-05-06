@@ -10,6 +10,7 @@
 @interface ZCircleButton : UIView
 
 @property (nonatomic, strong) UIColor *buttonTintColor;
+@property (nonatomic, strong) UIColor *buttonBackgroundColor;
 
 @property (nonatomic, assign) BOOL disabled;
 @property (nonatomic, readonly) UIImageView *imageView;
