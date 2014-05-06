@@ -105,10 +105,13 @@
 
 - (void)setButtonTintColor:(UIColor *)buttonTintColor{
     _buttonTintColor = buttonTintColor;
+    
     self.label.textColor = buttonTintColor;
     if (self.imageView.image){
         self.imageView.image = [self.imageView.image tintWithColor:buttonTintColor];
     }
+    self.circleView.color = buttonTintColor;
+
     [self setNeedsDisplay];
 }
 
